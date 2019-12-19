@@ -1,0 +1,24 @@
+server:
+  port: 8008
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/soft
+  thymeleaf:
+    mode: LEGACYHTML5
+    content-type: text/html
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/cf?useSSL=false
+      username: root
+      password: 199729
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
